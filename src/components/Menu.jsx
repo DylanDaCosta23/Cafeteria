@@ -60,7 +60,7 @@ const Menu = () => {
           price: '€4.80',
           time: '3 min',
           rating: 4.8,
-          image: '/cafe-colombia.png'
+          image: '/cafe-etopia.png'
         },
         {
           name: 'Guatemala Antigua',
@@ -68,7 +68,7 @@ const Menu = () => {
           price: '€4.20',
           time: '3 min',
           rating: 4.7,
-          image: '/cafe-colombia.png'
+          image: '/cafe-guatemala.png'
         }
       ]
     },
@@ -81,7 +81,7 @@ const Menu = () => {
           price: '€3.80',
           time: '1 min',
           rating: 4.8,
-          image: '/espresso.png'
+          image: '/cold-brew-premium.png'
         },
         {
           name: 'Frappé de Caramelo',
@@ -89,7 +89,7 @@ const Menu = () => {
           price: '€4.20',
           time: '4 min',
           rating: 4.6,
-          image: '/mocha.png'
+          image: '/frappe-caramelo.png'
         },
         {
           name: 'Iced Latte',
@@ -97,7 +97,7 @@ const Menu = () => {
           price: '€3.50',
           time: '2 min',
           rating: 4.7,
-          image: '/vainilla-latte.png'
+          image: '/iced-latte.png'
         }
       ]
     }
