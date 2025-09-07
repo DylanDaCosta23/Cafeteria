@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-900 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent-600 to-accent-700 hover:from-accent-700 hover:to-accent-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-glow;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-accent-600 text-accent-600 hover:bg-accent-600 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-glow;
+  }
+  
+  .btn-gold {
+    @apply bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .card-modern {
+    @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-600 to-gold-500 bg-clip-text text-transparent;
+  }
+  
+  .shimmer-effect {
+    @apply relative overflow-hidden;
+  }
+  
+  .shimmer-effect::before {
+    content: '';
+    @apply absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    animation: shimmer 2s infinite;
+  }
+  
+  .product-image {
+    @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-110;
+    filter: saturate(0.7) contrast(0.8) brightness(0.9) sepia(0.1);
+  }
+  
+  .product-image:hover {
+    filter: saturate(0.8) contrast(0.9) brightness(1) sepia(0.05);
+  }
+}
