@@ -13,7 +13,7 @@ const Menu = () => {
           time: '2 min',
           rating: 4.9,
           popular: true,
-          image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6b0d8c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/espresso.png'
         },
         {
           name: 'Cappuccino Artesanal',
@@ -21,7 +21,7 @@ const Menu = () => {
           price: '€3.20',
           time: '3 min',
           rating: 4.8,
-          image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/capuccino.png'
         },
         {
           name: 'Latte de Vainilla',
@@ -29,7 +29,7 @@ const Menu = () => {
           price: '€3.50',
           time: '4 min',
           rating: 4.7,
-          image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/vainilla-latte.png'
         },
         {
           name: 'Mocha Especial',
@@ -38,7 +38,7 @@ const Menu = () => {
           time: '5 min',
           rating: 4.9,
           popular: true,
-          image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/mocha.png'
         }
       ]
     },
@@ -52,7 +52,7 @@ const Menu = () => {
           time: '3 min',
           rating: 4.9,
           popular: true,
-          image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/cafe-colombia.png'
         },
         {
           name: 'Etiopía Yirgacheffe',
@@ -60,7 +60,7 @@ const Menu = () => {
           price: '€4.80',
           time: '3 min',
           rating: 4.8,
-          image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/cafe-colombia.png'
         },
         {
           name: 'Guatemala Antigua',
@@ -68,7 +68,7 @@ const Menu = () => {
           price: '€4.20',
           time: '3 min',
           rating: 4.7,
-          image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/cafe-colombia.png'
         }
       ]
     },
@@ -81,7 +81,7 @@ const Menu = () => {
           price: '€3.80',
           time: '1 min',
           rating: 4.8,
-          image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/espresso.png'
         },
         {
           name: 'Frappé de Caramelo',
@@ -89,7 +89,7 @@ const Menu = () => {
           price: '€4.20',
           time: '4 min',
           rating: 4.6,
-          image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/mocha.png'
         },
         {
           name: 'Iced Latte',
@@ -97,7 +97,7 @@ const Menu = () => {
           price: '€3.50',
           time: '2 min',
           rating: 4.7,
-          image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&sat=-30&con=-20&brightness=0.9'
+          image: '/vainilla-latte.png'
         }
       ]
     }
