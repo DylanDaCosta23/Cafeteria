@@ -78,62 +78,35 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <motion.button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            whileTap={{ scale: 0.95 }}
+          <button
+            onClick={() => {
+              console.log('Menu button clicked, current state:', isMenuOpen);
+              setIsMenuOpen(!isMenuOpen);
+            }}
             className="md:hidden p-2 text-gray-700 hover:text-accent-600 transition-colors duration-300 rounded-lg hover:bg-gray-100"
             aria-label="Toggle menu"
           >
-            <motion.div
-              animate={{ rotate: isMenuOpen ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </motion.div>
-          </motion.button>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <>
-              {/* Overlay */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
-                onClick={() => setIsMenuOpen(false)}
-              />
-              
-              {/* Menu */}
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg relative z-50"
-              >
-                <div className="px-4 py-6 space-y-4">
-                  {navItems.map((item, index) => (
-                    <motion.a
-                      key={item.name}
-                      href={item.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      whileHover={{ x: 10 }}
-                      className="block text-coffee-700 hover:text-accent-600 font-medium py-3 px-2 transition-colors duration-300 border-b border-gray-100 last:border-b-0"
-                    >
-                      {item.name}
-                    </motion.a>
-                  ))}
-                </div>
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
+        {isMenuOpen && (
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg">
+            <div className="px-4 py-6 space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block text-coffee-700 hover:text-accent-600 font-medium py-3 px-2 transition-colors duration-300 border-b border-gray-100 last:border-b-0"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </nav>
     </motion.header>
   )
