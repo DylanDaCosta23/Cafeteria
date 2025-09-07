@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide-react'
+import Map from './Map'
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
       title: 'Dirección',
-      details: 'Calle Principal 123, Centro Histórico',
-      subDetails: 'Ciudad, Región 12345'
+      details: 'Calle de la Paz, 123',
+      subDetails: '28012 Madrid, España'
     },
     {
       icon: Phone,
@@ -126,13 +127,12 @@ const Contact = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            {/* Map Placeholder */}
-            <div className="bg-gray-200 rounded-xl h-64 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-coffee-600 mx-auto mb-4" />
-                <p className="text-gray-600 font-medium">Mapa Interactivo</p>
-                <p className="text-sm text-gray-500">Calle Principal 123, Centro Histórico</p>
-              </div>
+            {/* Interactive Map */}
+            <div>
+              <h4 className="text-xl font-semibold text-coffee-800 mb-4">
+                Nuestra Ubicación
+              </h4>
+              <Map />
             </div>
 
             {/* Contact Form */}
